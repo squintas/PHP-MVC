@@ -1,8 +1,5 @@
 <?php
 
-if(!empty($action)) {
-    echo 'mostrar os posts' . $action;
-}
-else {
+if(!empty($controller)) {
     require("views/home.php");
 }

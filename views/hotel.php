@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Isto é a Página de Posts</h1>
+    <h1>Isto é a página de cada hotel</h1>
 </body>
 </html>

@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Isto é a Home Page</h1>
-    <a href="">Ir para um post</a>
+    Isto é o travel Journal
 </body>
 </html>

@@ -2,7 +2,6 @@
 
 $url_parts = explode("/", $_SERVER["REQUEST_URI"]);
 
-
 // echo '<pre>';
 // print_r($url_parts);
 // echo '</pre>';
@@ -10,7 +9,8 @@ $url_parts = explode("/", $_SERVER["REQUEST_URI"]);
 
 $controllers = [
     "home",
-    "posts"
+    "hotel",
+    "traveljournal"
 ];
 
 // Vamos buscar o controller. Posição depois do Traveljournal no URL
