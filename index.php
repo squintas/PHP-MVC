@@ -8,13 +8,13 @@ $url_parts = explode("/", $_SERVER["REQUEST_URI"]);
 
 
 $controllers = [
-    "home",
+    "categories",
     "hotel",
     "traveljournal"
 ];
 
 // Vamos buscar o controller. Posição depois do Traveljournal no URL
-$controller = !empty($url_parts[2]) ? $url_parts[2] : "home";
+$controller = !empty($url_parts[2]) ? $url_parts[2] : "categories";
 
 $action = !empty($url_parts[3]) ? $url_parts[3] : "";
 

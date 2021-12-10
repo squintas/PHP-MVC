@@ -8,6 +8,18 @@
 </head>
 <body>
     <h1>Isto é a Home Page</h1>
-    <a href="">Ir para um post</a>
+    
+    <?php
+        foreach($categories as $category) {
+            echo '
+                <p>
+                    <a href="">'.$category["name"].'</a>
+
+                </p>
+            ';
+            }
+    ?>
+
+
 </body>
 </html>

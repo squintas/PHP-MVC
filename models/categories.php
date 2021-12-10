@@ -1,9 +1,9 @@
 <?php
-class Posts 
+class Categories 
 {
     private $db;
     
-    public function __contruct(){
+    public function __construct(){
         $this->db = new PDO("mysql:host=localhost;dbname=traveljournal;charset=utf8mb4","root","");
     }
 
@@ -11,15 +11,15 @@ class Posts
         
         $query = $this->db->prepare("
 
-        SELECT id, title, content
-        FROM posts 
+        SELECT category_id, name
+        FROM categories; 
     
         ");
 
         $query ->execute();
 
         // 3- caso seja SELECT, é necessário obter os dados para dentro de uma variavel
-        return $posts = $query->fetchAll( PDO::FETCH_ASSOC);
+        return $query->fetchAll( PDO::FETCH_ASSOC);
         
     }
 }
