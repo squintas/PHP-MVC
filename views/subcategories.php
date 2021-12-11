@@ -7,10 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>teste</h1>
+    
 
-    
-       
-    
+<h3>Isto é a página da subcategoria</h3>
+
+<p>subcategoria</p>
+
+
+<br><br><br><br><br>
+<a href="/categories">Ver Categorias</a>
+<br>
+<a href="/">Home Page</a>
+
+
 </body>
 </html>

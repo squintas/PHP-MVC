@@ -4,15 +4,16 @@ require("models/categories.php");
 $model = new Categories();
 
 /*
-localhost/app/hotelCategory
-localhost/app/hotelCategory/hotelName
+localhost/hotelCategory
+localhost/hotelCategory/hotelName
 */
 
+
 if(!empty($permalink)){
-    $hotelInfo = $model->getHotelInfo($permalink);
-    require("views/hotels.php");
-    
+    require("views/subcategories.php");
 } else {
-    //Obter as categorias para conseguir utiliza-las no view através de $categories
-    // require("views/home.php");
+
+     $categories = $model->getHotelCategory($permalink);
+        require("./views/categories.php");
 }
+

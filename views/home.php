@@ -9,16 +9,18 @@
 <body>
     <h1>Isto é a Home Page</h1>
 
+    <a href="/categories">Ver Categorias</a>
+
     
     <?php
-        foreach($categories as $category) {
-            echo '
-                <p>
-                    <a href="'.$category["permalink"].'">'.$category["name"].'</a>
+        // foreach($categories as $category) {
+        //     echo '
+        //         <p>
+        //             <a href="'.$category["permalink"].'">'.$category["name"].'</a>
 
-                </p>
-            ';
-            }
+        //         </p>
+        //     ';
+        //     }
     ?>
 
 
