@@ -2,9 +2,9 @@
 
 $url_parts = explode("/", $_SERVER["REQUEST_URI"]);
 
-echo '<pre>';
-print_r($url_parts);
-echo '</pre>';
+// echo '<pre>';
+// print_r($url_parts);
+// echo '</pre>';
 
 
 $controllers = [

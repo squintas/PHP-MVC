@@ -8,12 +8,13 @@
 </head>
 <body>
     <h1>Isto é a Home Page</h1>
+
     
     <?php
         foreach($categories as $category) {
             echo '
                 <p>
-                    <a href="">'.$category["name"].'</a>
+                    <a href="'.$category["permalink"].'">'.$category["name"].'</a>
 
                 </p>
             ';
