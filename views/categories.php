@@ -14,7 +14,7 @@
    foreach($categories as $category) {
        echo '
            <p>
-               <a href="/categories/'.$category["permalink"].'">'.$category["name"].'</a>
+               <a href="/category/'.$category["category_id"].'">'.$category["name"].'</a>
 
            </p>
        ';

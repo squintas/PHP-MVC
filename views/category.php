@@ -9,10 +9,19 @@
 <body>
     
 
-<h3>Isto é a página da subcategoria</h3>
+<h3>Isto é a página da categoria</h3>
 
-<p>subcategoria</p>
+<?php
 
+foreach($hotels as $hotel) {
+       echo '
+           <p>
+               '.$hotel["name"].'
+
+           </p>
+       ';
+       }
+?>
 
 <br><br><br><br><br>
 <a href="/categories">Ver Categorias</a>

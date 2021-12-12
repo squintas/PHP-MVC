@@ -4,16 +4,13 @@ require("models/categories.php");
 $model = new Categories();
 
 /*
-localhost/hotelCategory
-localhost/hotelCategory/hotelName
+localhost/categories
+localhost/category/asdasdasd
 */
 
 
-if(!empty($permalink)){
-    require("views/subcategories.php");
-} else {
-
-     $categories = $model->getHotelCategory($permalink);
-        require("./views/categories.php");
+if(!empty($controller)){ 
+    $categories = $model->getHotelCategory();
+    require("./views/categories.php");
 }
 
