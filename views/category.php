@@ -29,5 +29,8 @@ foreach($hotels as $hotel) {
 <a href="/">Home Page</a>
 
 
+
+
+
 </body>
 </html>
