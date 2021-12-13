@@ -4,9 +4,14 @@ require("models/hotels.php");
 $model = new Hotels();
 
 
-if(!empty($controller)){
+if(empty($detail)){
 
-    $hotels = $model->getHotelInfo($permalink);
-    // var_dump($hotels);
+    $hotels = $model->getHotelInfo($action);
+    // var_dump($action);
     require("./views/category.php");
+} else {
+   
+    $hotel = $model->getHotelByPermalink($detail);
+    // var_dump($hotel);
+    require("./views/hotel.php");
 }

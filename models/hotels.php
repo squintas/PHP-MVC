@@ -15,10 +15,11 @@ class Hotels
 
         SELECT 
             hotels.category_id, 
-            hotels.name, 
+            hotels.name AS hotelname, 
             hotels.country, 
+            hotels.permalink,
             hotels.city, 
-            categories.name 
+            categories.name AS categoryname
         FROM 
             hotels 
         INNER JOIN 
@@ -28,9 +29,6 @@ class Hotels
         WHERE 
             hotels.category_id = ?
         
-        
-        
-    
         ");
 
         $query ->execute([$category_id]);
@@ -40,7 +38,31 @@ class Hotels
 
     }
 
-    
+
+    public function getHotelByPermalink($permalink){
+       
+        $query = $this->db->prepare("
+
+        SELECT 
+            hotels.category_id, 
+            hotels.name, 
+            hotels.description,
+            hotels.country, 
+            hotels.permalink,
+            hotels.city 
+        FROM 
+            hotels 
+        WHERE
+            hotels.permalink = ?
+        
+        ");
+
+        $query ->execute([$permalink]);
+
+        // 3- caso seja SELECT, é necessário obter os dados para dentro de uma variavel
+        return $query->fetch( PDO::FETCH_ASSOC);
+
+    }   
 }
 
 

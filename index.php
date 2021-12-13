@@ -15,12 +15,14 @@ $url_parts = explode("/", $_SERVER["REQUEST_URI"]);
 $controllers = [
     "categories",
     "category",
+    "hotel",
     "home"
 ];
 
-// Vamos buscar o controller. Posição depois do Traveljournal no URL
+// Vamos buscar o controller.
 $controller = !empty($url_parts[1]) ? $url_parts[1] : "home";
-$permalink = !empty($url_parts[2]) ? $url_parts[2] : "";
+$action = !empty($url_parts[2]) ? $url_parts[2] : "";
+$detail = !empty($url_parts[3]) ? $url_parts[3] : "";
 
 //Verifica se o controller está no array. Desta forma aceita o URL 
 if(!in_array($controller, $controllers)) {
