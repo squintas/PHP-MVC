@@ -10,15 +10,25 @@ class Users
    
     public function getUserLogin( $user ){
         
-        $query = $this->db->prepare("
+        if(
+            filter_var($user["email"], FILTER_VALIDATE_EMAIL) &&
+            mb_strlen($user["password"]) >= 8 &&
+            mb_strlen($user["password"]) <= 1000
+        ) {
+            $query = $this->db->prepare("
+                SELECT user_id, name, password
+                FROM users
+                WHERE email = ?
+            ");
+            $query->execute([
+                $user["email"]
+            ]);
 
-        ");
-
-        $query ->execute();
-
-        // 3- caso seja SELECT, é necessário obter os dados para dentro de uma variavel
-        return $query->fetchAll( PDO::FETCH_ASSOC);
+            return $query->fetch();
         
+        }
+        
+        return [];
     }
 
     public function create( $user ){
@@ -48,7 +58,7 @@ class Users
                 ]);
 
             } catch(Exception) {
-                echo "Informação não preenchida correctamente";
+                echo "Informação obrigatória não preenchida correctamente";
             }             
         }         
     }
