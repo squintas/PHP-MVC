@@ -14,8 +14,8 @@ $url_parts = explode("/", $_SERVER["REQUEST_URI"]);
 
 $controllers = [
     "categories",
+    "access",
     "category",
-    "hotel",
     "home"
 ];
 

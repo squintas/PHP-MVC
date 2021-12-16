@@ -11,6 +11,10 @@ localhost/category/asdasdasd
 
 if(!empty($controller)){ 
     $categories = $model->getHotelCategory();
+
+    
+
+
     require("./views/categories.php");
 }
 

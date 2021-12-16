@@ -8,13 +8,15 @@
 </head>
 <body>
     
-
     
-<?php
-    foreach($hotels as $hotel) {
-        
-    echo '
-           <h1>'.$hotel["categoryname"].'</h1>
+    
+
+    <?php
+   //Vou buscar a categoria ao array multidimensional
+    echo'<h1>'.$hotels[0]["categoryname"].'</h1>';
+   
+    foreach($hotels as $hotel) {        
+       echo '
            <h3>'.$hotel["hotelname"].'</h3>
            <h5>'.$hotel["country"].', '.$hotel["city"].'</h5>
            <a href="/category/'.$hotel["category_id"].'/'.$hotel["permalink"].'">Ver Hotel</a>

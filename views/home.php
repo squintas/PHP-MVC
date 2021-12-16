@@ -13,14 +13,8 @@
 
     
     <?php
-        // foreach($categories as $category) {
-        //     echo '
-        //         <p>
-        //             <a href="'.$category["permalink"].'">'.$category["name"].'</a>
-
-        //         </p>
-        //     ';
-        //     }
+        
+            require("views/navigation.php");
     ?>
 
 
