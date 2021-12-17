@@ -16,25 +16,25 @@
             <div>
                 <label>
                     Nome
-                    <input type="text" name="name" required minlength="3" maxlength="60">
+                    <input type="text" name="name" class="form-control" required minlength="3" maxlength="60">
                 </label>
             </div>
             <div>
                 <label>
                     Email
-                    <input type="email" name="email" required>
+                    <input type="email" name="email" class="form-control" required>
                 </label>
             </div>
             <div>
                 <label>
                     Password
-                    <input type="password" name="password" required minlength="8" maxlength="1000">
+                    <input type="password" name="password" class="form-control" required minlength="8" maxlength="1000">
                 </label>
             </div>
             <div>
                 <label>
                     Repetir Password
-                    <input type="password" name="repeat_password" required minlength="8" maxlength="1000">
+                    <input type="password" name="repeat_password" class="form-control" required minlength="8" maxlength="1000">
                 </label>
             </div>
               

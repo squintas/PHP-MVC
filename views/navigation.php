@@ -11,8 +11,11 @@
 
 
             echo '   
-                Olá ' .$name_parts[0]. '!     
+                Olá ' .$name_parts[0]. '!   
+                <br>  
                 <a href="/access/logout">Efectuar Logout</a>
+                <br>
+                <a href="/admin">Admin Page</a>
             ';
         }
         else {
