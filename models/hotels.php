@@ -17,8 +17,9 @@ class Hotels
             hotels.category_id, 
             hotels.name AS hotelname, 
             hotels.country, 
-            hotels.permalink,
+            hotels.permalink AS hotelpermalink,
             hotels.city, 
+            categories.permalink AS categoriespermalink,
             categories.name AS categoryname
         FROM 
             hotels 
