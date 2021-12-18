@@ -9,7 +9,7 @@ class Hotels
 
     
 
-    public function getHotelInfo($category_id){
+    public function getHotelInfo($permalink){
        
         $query = $this->db->prepare("
 
@@ -28,11 +28,11 @@ class Hotels
         ON 
             hotels.category_id = categories.category_id
         WHERE 
-            hotels.category_id = ?
+            categories.permalink = ?
         
         ");
 
-        $query ->execute([$category_id]);
+        $query ->execute([$permalink]);
 
         // 3- caso seja SELECT, é necessário obter os dados para dentro de uma variavel
         return $query->fetchAll( PDO::FETCH_ASSOC);

@@ -19,7 +19,7 @@
        echo '
            <h3>'.$hotel["hotelname"].'</h3>
            <h5>'.$hotel["country"].', '.$hotel["city"].'</h5>
-           <a href="/category/'.$hotel["category_id"].'/'.$hotel["hotelpermalink"].'">Ver Hotel</a>
+           <a href="/category/'.$hotel["categoriespermalink"].'/'.$hotel["hotelpermalink"].'">Ver Hotel</a>
        ';
        }
 ?>

@@ -6,7 +6,7 @@ $model = new Hotels();
 
 if(empty($detail)){
     $hotels = $model->getHotelInfo($action);
-    // echo '<pre>' . var_export($hotels, true) . '</pre>';
+    echo '<pre>' . var_export($hotels, true) . '</pre>';
     //Valida a Rota
     if(empty($hotels)){
         header("HTTP/1.1 404 Not Found");

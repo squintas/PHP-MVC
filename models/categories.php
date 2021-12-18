@@ -9,7 +9,7 @@ class Categories
 
     public function getHotelCategory(){        
         $query = $this->db->prepare("
-        SELECT category_id, name
+        SELECT category_id, name, permalink
         FROM categories;       
         ");
         $query ->execute();
