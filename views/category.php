@@ -8,9 +8,6 @@
 </head>
 <body>
     
-    
-    
-
     <?php
    //Vou buscar a categoria ao array multidimensional
     echo'<h1>'.$hotels[0]["categoryname"].'</h1>';
