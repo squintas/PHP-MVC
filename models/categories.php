@@ -17,9 +17,15 @@ class Categories
         return $query->fetchAll( PDO::FETCH_ASSOC);        
     }
 
-    
 
-    
+    public function createCategory($permalink, $name){  
+        
+        $query = $this->db->prepare("
+        INSERT INTO categories (permalink, name)
+        VALUES (?,?);       
+        ");
+       return $query ->execute([$permalink, $name]);       
+    }   
 }
 
 

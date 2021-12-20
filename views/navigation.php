@@ -1,8 +1,5 @@
 <nav>
     <?php
-    
-    session_start();
-
         // Mudar para logout após o utilizador entrar na sua conta
         if(isset($_SESSION["user_id"])) {
 

@@ -1,7 +1,7 @@
 <?php
 require("models/users.php");
 $modelUsers = new Users();
-session_start();
+// session_start();
 
 if($action === "login") {
 
