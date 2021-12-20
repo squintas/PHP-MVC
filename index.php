@@ -3,7 +3,6 @@
 <!-- ---------  -->
 
 
-
 <?php
 $url_parts = explode("/", $_SERVER["REQUEST_URI"]);
 

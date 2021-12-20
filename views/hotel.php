@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="/">Home Page</a>
 
     
     <?php
@@ -21,7 +22,6 @@
     ?>
 
 
-<a href="/">Home Page</a>
 
 
 </body>
